@@ -1,6 +1,6 @@
 require "bundler"
 Bundler.require
-require "./lib/pig_latin.rb"
+require_relative "lib/conversation_code.rb"
 
 class App < Sinatra::Application
 
@@ -8,10 +8,13 @@ class App < Sinatra::Application
 		erb :index
 	end
   
-  post '/translate' do
-    string_to_translate = params["user_input"]
-    translator = PigLatin.new(string_to_translate)
-    @tramslated_string = translator.translate
+  post '/start_conversation' do
+    user_input = params["user_input"]
+    @hoppers_response = hopper_responses(user_input)
+    if @hoppers_response.class == Array
+      @image = @hoppers_response.last
+      @hoppers_response = @hoppers_response.first
+    end
     erb :results
   end
 

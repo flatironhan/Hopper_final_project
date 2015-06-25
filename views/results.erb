@@ -1,12 +1,33 @@
 <div class="content">
   
-  <div class="results">
-    <h1>Translation</h1>
-    <br>
-    <h2><%= @params.inspect =%></h2>
-    
+  
+  <div style="font-size:80px";> Talk to Hopper!</div>
+  <div style="font-size:50px";>Hi, I'm Hopper! Ask me anything!</div>
+  
+  <img src="https://raw.githubusercontent.com/kthffmn/grace-hopper/master/normal_hopper.png" width="500px">
 
-    <a class="home" href="/">Home</a>
+  <form action="/start_conversation" method="POST">
+    <label>Talk to me here:</label>
+    <input type="text" name="user_input">
+    <button value=submit>Talk!</button>
+  </form>
+
+</div>
+
+<div class="hopper_response">
+  
+  <div class="results">
+    <br>
+    <div style="font-size:30px";><%= @hoppers_response %></div>
+    
+    <img src="<%= @image %>">
+    
   </div>
+  
+  <br>
+  
+  <div>
+    
+    <a href="/" class="home_button">click here to go home</a>
 
 </div>

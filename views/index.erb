@@ -1,32 +1,32 @@
 <div class="content">
   
-  <h1>Pig Latin Translator</h1>
+  
+  <div style="font-size:60px";> Talk to Hopper!</div>
+  <div style="font-size:50px";>Hi, I'm Hopper! Ask me anything!</div>
+  
+  <img src="https://raw.githubusercontent.com/kthffmn/grace-hopper/master/normal_hopper.png" width="500px">
 
-  <form action="/result" method="POST">
-    <label>Enter the text you'd like to translate</label>
-    <br>
-    <input type="text" name="user-input-amount-to-kill">
-    
-    
-    <input type="checkbox" value = "Revenge" name="user-input-motive">
-    <input type="checkbox" value = "World Domination" name="user-input-motive">
-    <input type="checkbox" value = "Inheritance" name="user-input-motive">
-    <input type="checkbox" value = "Maintain a secret" name="user-input-motive">
-    <input type="checkbox" value = "To save my own life" name="user-input-motive">
-    <input type="checkbox" value = "Entertainment" name="user-input-motive">
-    <input type="checkbox" value = "Government Order" name="user-input-motive">
-    
-    <input type="radio" value = "Rural" name="user-input-location">
-    <input type="radio" value = "Urban" name="user-input-location">
-    
-    <input type="checkbox" value = "Family" name="user-input-relation">
-    <input type="checkbox" value = "Friend" name="user-input-relation">
-    <input type="checkbox" value = "Enemy" name="user-input-relation">
-    <input type="checkbox" value = "Boss/Ruler" name="user-input-relation">
-    <input type="checkbox" value = "Political Figure/International Superstar" name="user-input-relation">
-    <input type="checkbox" value = "Random" name="user-input-relation">
-    
-    <button value=submit>Translate!</button>
+  <form action="/start_conversation" method="POST">
+    <label>Talk to me here:</label>
+    <input type="text" name="user_input">
+    <button value=submit>Talk!</button>
   </form>
+    
+  </div>
+    
+    <div class="content2">
+  <div style="font-size:30px";> Having trouble getting a response? </div>
+  
+      <ul> 
+<li style="font-size:20px";>Please do not use contractions - Hopper is an old grasshopper and requires proper English to understand.</li> 
+<li style="font-size:20px";>Please type fully (try not to use chatspeak) and  correctly spell your words - Hopper is already a foreigner to your strange tongue.</li>
+<li style="font-size:20px";>Punctuation is not important to Hopper - unnecessary periods, commas, question marks or other stray punctuation may have confused Hopper. Try retyping without it. </li>
+      </ul>
+    
+</div>
+  
+  <div class="content">
+    
+  <p style="font-size:25px";> If you've tried all this, you may just be asking about topics Hopper knows nothing about or feels uncomfortable talking about. Try asking him some basic questions to get to know him.</p>
 
 </div>

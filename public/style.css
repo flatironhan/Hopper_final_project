@@ -1,10 +1,25 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
 body {
-  color: hotpink;
-  background: #9ADAF9;
-  font-family: monospace;
+  color: #FFFFFF;
+  background: #330066;  
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 2em;
 }
 
 .content {
+  text-align: center;
+}
+
+.content2 {
+  text-align: left;
+}
+
+.home_button {
+  color: #FFFFFF;
+}
+
+.hopper_response {
+  color: #FF0000;
   text-align: center;
 }
