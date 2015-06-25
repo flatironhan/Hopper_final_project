@@ -105,8 +105,8 @@ elsif user_input == "who is your favorite celebrity" || user_input == "do you ha
   return "John Cameron Mitchell. You wouldn't know him, unless of course you know him."
   
   ## social media
-elsif user_input.split(" ").include?("social media") || user_input.split(" ").include?("twitter") || user_input.split(" ").include?("instagram") || user_input.split(" ").include?("blog") || user_input.split(" ").include?("facebook")
-  return "Ohhhh social media!!! You should follow me on twitter and instagram @fedora_lover_101! 
+elsif user_input.split(" ").include?("social") || user_input.split(" ").include?("media")|| user_input.split(" ").include?("twitter") || user_input.split(" ").include?("instagram") || user_input.split(" ").include?("blog") || user_input.split(" ").include?("facebook")
+  return "Ohhhh did you say social media?!?! You should follow me on twitter and instagram @fedora_lover_101! 
 I also have a blog called 'A Day In The Life Of A Grasshopper'. It's really becomming popular you should definitely check it out!"
   
   
