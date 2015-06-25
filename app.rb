@@ -1,11 +1,13 @@
 require "bundler"
 Bundler.require
 require_relative "lib/conversation_code.rb"
+require_relative "lib/suggested_questions.rb"
 
 class App < Sinatra::Application
 
 	get '/' do
-		erb :index
+		@random_question = random_question
+    erb :index
 	end
   
   get '/image_credits' do

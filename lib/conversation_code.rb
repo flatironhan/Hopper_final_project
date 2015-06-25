@@ -18,8 +18,11 @@ elsif user_input == "what is your name" || user_input == "what's your name" || u
   return "My given name is Hopper, but you should adress me as Your Grace, Hopper. It would be quite offensive if you didn't."
 elsif user_input == "why are you named hopper" || user_input == "why are you named that" ||user_input ==  "whay is that your name" || user_input == "where does your name come from"
   return "The name has been passed down from generation to generation on my father's side (it hops in the family). I am really Hopper VII. This name is apt because when I was in the Rockettes I hopped instead of kicked in the Can Can Line." 
-elsif user_input == "who are you" || user_input == "what are you"
+elsif user_input == "who are you" || user_input == "what are you" || user_input == "what is this"
   return "I am Hopper. But you may address me as Your Grace, Hopper."
+elsif user_input == "what are you doing"
+  return "umm what are you doing?"
+  
   
   ## goodbyes
 elsif user_input == "bye" || user_input == "goodbye" || user_input == "good bye" || user_input == "byeee"
@@ -162,7 +165,7 @@ elsif user_input == "what is your favorite breakfast food" || user_input == "do 
   return "Most mornings I have smoked salmon with pureed edamame. However, my favorite breakfast would have to be a fresh funyun omelette with a tall glass of tantrum."
 elsif user_input == "where were you on the night of May 18th 1993"
   return "I am not at liberty to disclose that information."
-elsif user_input == "do you have any pets" || user_input == "do you have pets" || user_input == "do you have a pet"
+elsif user_input == "do you have any pets" || user_input == "do you have pets" || user_input == "do you have a pet" || user_input == "do you have a dog" || user_input == "do you have any dogs"
   return {"message" => "yes, I have a Chihuahua named Gnosis. Here's a picture of me with him!", "images" => ["https://raw.githubusercontent.com/kthffmn/grace-hopper/master/tophats_with_dog.jpg"]}
 
  ## sports 
@@ -171,6 +174,10 @@ elsif user_input.split(" ").include?("swim") || user_input.split(" ").include?("
   elsif user_input.split(" ").include?("sports") || user_input.split(" ").include?("sport")
   return "Oh so you mentioned sports. Did I mention that in addition to being an excellent swimmer, I also play cricket professionally? I am on an all grasshopper cricket team (NO crickets allowed) and we are currently 4th in the league. Hopefully by the playoffs we'll have gotten better and maybe we'll be able to take home the golden grasshopper orb this year!"
   
+  ##stupid people questions
+elsif user_input == "what should i ask you" || user_input == "what would i say to you" || user_input == "what should i type" || user_input == "i don't know what to type" || user_input == "i do not know what to type" || user_input == "i do not know what to say" || user_input == "what should i say" || user_input == "what should i say to you"
+  return "Don't bother me with your own problems! I could easily talk to any of my 10,000 other fans."
+
   
   ## jokes
 elsif user_input == "knock knock"
@@ -183,6 +190,13 @@ elsif user_input == "interrupting cow"
   return "What?? Are you ok? Perhaps you'd like to listen to the amazing song 'Remarkable Cows'"
 elsif user_input == "why did the chicken cross the road"
   return "Are you sure you don't want to know why the grasshopper crossed the road? OBVIOUSLAY to buy a fedora!"
+  
+  ## more photograph questions
+elsif user_input == "have you ever been parachuting" || user_input == "have you been parachuting" || user_input == "have you gone parachuting" || "have you ever gone parachuting"
+  return "glad you asked! I actually went last Saturday - here's a picture!"
+elsif user_input == "have you ever had a near death encounter"
+  return "yes, I shudder to think of it. Here's a picture, but I can't talk of further. Look upon my works ye mighty and despair!"
+  
   
   ## anything else
 else
