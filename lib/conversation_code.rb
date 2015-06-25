@@ -6,14 +6,6 @@ def hopper_responses(user_input)
 ## greetings
 if user_input == "hi" || user_input == "hello" || user_input == "hey" || user_input == "hiya" || user_input == "hello hopper" || user_input == "hi hopper" || user_input == "hiya hopper" || user_input == "hey hopper"
   return "why hello there!"
-elsif user_input == "howdy"
-  return "howdy there partner!"
-elsif user_input == "hola" || user_input == "hola hopper"
-  return "¡hola! ¿Cómo estás? Sorry, that's all the Spanish I know ;)"
-elsif user_input == "ahoy there" || user_input == "ahoy"
-  return "ah so you are a sailer of the high seas are ye? I'm not much of a sailer - I get seasick :("
-elsif user_input == "sup"
-  return "Sup...? Oh Sup! I did take my vitamin D supplement this morning! Thank you for asking ;)"
 elsif user_input == "what is your name" || user_input == "what's your name" || user_input == "what do you call yourself" || user_input == "do you have a name"
   return "My given name is Hopper, but you should adress me as Your Grace, Hopper. It would be quite offensive if you didn't."
 elsif user_input == "why are you named hopper" || user_input == "why are you named that" ||user_input ==  "whay is that your name" || user_input == "where does your name come from"
@@ -47,12 +39,12 @@ elsif user_input == "where do you live" || user_input =="where are you"
   return "Currently I'm in a space ship hurding towards Mars at 10,000 miles per hour. But I live in the minds and hearts of all who have encountered me - your left ventricle is getting a little crowded by the way."
 elsif user_input == "how are you" || user_input == "how are you doing" || user_input == "how are you today" 
   return "better than you ever could be! How are you? (In one word please, I don't want to be bothered with the details.)"
-elsif user_input == "great" || user_input =="good" ||user_input == "fine" || user_input =="ok" ||user_input == "so so" || user_input =="bad" || user_input =="awful" || user_input =="tired" || user_input =="well"
+elsif user_input == "great" || user_input =="good" ||user_input == "fine" || user_input == "ok" ||user_input == "so so" || user_input == "bad" || user_input == "awful" || user_input == "tired" || user_input == "well" || user_input == "meh"
   return "I was just saying that to be polite - I don't actually want to know!!!! GOSH!"
 elsif user_input == "are you human"
   return "Aw Hell No! I'm a grasshopper - OBVIOUSLAY!!!"  
 elsif user_input == "what is your favorite color" || user_input == "what is your favourite colour" || user_input == "what's your favorite color" || user_input == "what's your favourite colour"
-  return "wonderflonium. You wouldn't know it..... OMG!!! OH MY GRANDMOTHER!!! My grandmother just texted me the funniest thing!"
+  return "My favorite color is wonderflonium. You wouldn't know it..... OMG!!! OH MY GRANDMOTHER!!! My grandmother just texted me the funniest thing!"
 elsif user_input == "where are you from" || user_input == "where're you from"
   return "I am from a far off land where folks roam the earth like big rolling kegs and the main export is a long lasting ink called Xascascxxxss."
 elsif user_input == "how is your day" || user_input == "how was your day" || user_input == "how is your day going"
@@ -67,7 +59,7 @@ elsif user_input == "are you a moman or a wan" || user_input == "are you a man-w
   
   ## yes and no responces (and why)
 elsif user_input == "yes" || user_input == "yeah" || user_input == "ya" || user_input == "yea"
-  return "... this is awkward"
+  return "... well this is awkward"
 elsif user_input == "no"
   return "ok then"
   elsif user_input == "why"
@@ -148,7 +140,7 @@ elsif user_input.split(" ").include?("broadway")
   return "Did you say Broadway?!? I ADORE Broadway! I used to act professionally as a singing and dancing grasshopper! My starring role was as an elk in The Lion King - I was especially gifted at leaping.
   I also starred in Cabaret with Neil Patrick Harris, but that is one of my lesser known roles. Currenly Hedwig and the Angry Inch is one of my favorite musicals. You should go see it! I saw it a lot of times. But it shoulda been you seeing it! Hey, that's another good one! See It Shoulda Been You too!"
 
-elsif user_input.split(" ").include?("grandmother") || user_input.split(" ").include?("grandma") || user_input.split(" ").include?("granny")
+elsif user_input.split(" ").include?("grandmother") || user_input.split(" ").include?("grandma") || user_input.split(" ").include?("granny") || user_input == "what did she say" || user_input == "what did she text you" || user_input == "what did she text" || user_input == "what did she write"
   return "ok so, you need a little background about my grandma to understand this story. She just texted me 'hi Hopper' but you see, she doesn't actually speak english. She only speaks Grasshoppönian and Russian. In  Grasshoppönian 'hi' means 'I just robbed a bank! The hops are after me! Quick, help me escape!'. That wouldn't be surprising because she is a known fugitive, except that there aren't any banks in her area so she must be delusional. Maybe she forgot to take her vitamin D supplements."
   
 elsif user_input.split(" ").include?("vacation")
@@ -159,6 +151,9 @@ elsif user_input.split(" ").include?("weather")
   
 elsif user_input.split(" ").include?("fedora") || user_input.split(" ").include?("fedoras") || user_input.split(" ").include?("hat") || user_input.split(" ").include?("hats")
   return "So glad you mentioned hats! I ADORE fedoras! They are a necessary fashion accessory for anyone who is trying to look good! Not only do they bring out my eyes, they also protect me from the sun, and serve as a disguise if I am out and about and don't want to be recognised by my adoring but annoying fans. I have gotten off topic... what were you asking me?"
+  
+elsif user_input.split(" ").include?("chiwawa") || user_input.split(" ").include?("chihuahua")
+  return "I love my Chihuahua Gnosis! Want to see a picture of us together?"
   
   ## random
 elsif user_input == "what is your favorite breakfast food" || user_input == "do you have a favorite breakfast food" || user_input == "what's your favorite breakfast food" || user_input == "what is your favorite breakfast" || user_input == "do you have a favorite breakfast" || user_input == "what's your favorite breakfast"
@@ -192,10 +187,69 @@ elsif user_input == "why did the chicken cross the road"
   return "Are you sure you don't want to know why the grasshopper crossed the road? OBVIOUSLAY to buy a fedora!"
   
   ## more photograph questions
-elsif user_input == "have you ever been parachuting" || user_input == "have you been parachuting" || user_input == "have you gone parachuting" || "have you ever gone parachuting"
+elsif user_input == "have you ever been parachuting" || user_input == "have you been parachuting" || user_input == "have you gone parachuting" || user_input == "have you ever gone parachuting"
   return "glad you asked! I actually went last Saturday - here's a picture!"
 elsif user_input == "have you ever had a near death encounter"
   return "yes, I shudder to think of it. Here's a picture, but I can't talk of further. Look upon my works ye mighty and despair!"
+  
+  ## bus/subway written code (saved on Sinatra)
+  elsif user_input == "what do you think about when you are alone"
+return "My dad, my mom and my parents and Patti and Tina and Yoko, Aretha, and Nona and Nico and me!"
+
+elsif user_input == "do you like cabbage"
+return "no, I detest it!"
+
+elsif user_input == "have you ever been on a submarine"
+return "December 3rd, 2004. I was late for a meeting with the CIA, so I traveled to Tokyo in a highspeed submarine."
+
+elsif user_input == "have you been to the top of the empire state building"
+return "I have, but there was really no point. The view up there isn't much better than from my average hopping height."
+
+elsif user_input == "do you prefer hamburgers or hotdogs"
+return "Who do you think I am? I only dine on the finest dishes prepared by the world's most skilled chefs. I never eat hamburgers or hotdogs!"
+
+elsif user_input == "do you knit"
+return "yes I do knit. Currently I am working on a sweater for Gnosis."
+
+elsif user_input.split(" ").include?("gnosis")
+return "ah Gnosis. He's such a cute dog. I love my pet! Here's a picture of us together!"
+
+elsif user_input == "do you like the beach"
+return "oh yes I love the beach! I was just at the beach in my around the world vacation!"
+
+elsif user_input == "do you ride" || user_input == "do you like to ride" || user_input == "do you like to ride horses" || user_input == "do you ride horses" || user_input == "can you ride" || user_input == "do you like horseback riding"
+returns "awww hell no! I'm not a cowboy! I'm a refined grasshopper! Horseback riding is for barbarian crickets!"
+
+elsif user_input == "what is two plus two" || user_input == "what is 2 + 2" || user_input == "what is 2+2" || user_input == "what's two plus two" || user_input == "what's 2 + 2" || user_input == "what's 1 + 1" || user_input == "what is 1 + 1" || user_input == "what's one plus one" || user_input == "what is one plus one"
+return "I'm not a calculator! Why are you asking me?"
+
+elsif user_input == "what is the value of pi" || user_input == "what is pi" || user_input == "what's pi" || user_input == "what's the value of pi" 
+return "It's 3.14159.... OBVIOUSLAY!!! Now if you meant 'pie' that's a different question"
+
+elsif user_input == "what is pie" || user_input == "what's pie" || user_input == "what is the value of pie" || user_input == "what's the value of pie" 
+return "Pie a popular dessert... why are you asking me this? Don't you know english? If you're looking for a good pie recipe try grasshopper pie - don't worry, there aren't real grasshoppers in it. I'm not a cannibal!!"
+
+  ## languages
+elsif user_input == "do you speak any other languages?" || user_input == "do you know any other languages"
+  return "I know a bit of spanish, french, german, pig latin, latin, pirate, ship-speak and cowboy but that's all."
+  elsif user_input == "howdy"
+  return "howdy there partner!"
+elsif user_input == "hola" || user_input == "hola hopper" || user_input.split(" ").include?("spanish")
+  return "¡hola! ¿Cómo estás? Sorry, that's all the Spanish I know ;)"
+elsif user_input == "ahoy there" || user_input == "ahoy"
+  return "ah so you are a sailer of the high seas are ye? I'm not much of a sailer - I get seasick :("
+elsif user_input == "sup"
+  return "Sup...? Oh Sup! I did take my vitamin D supplement this morning! Thank you for asking ;)"
+elsif user_input == "bonjour" || user_input == "bonjour hopper" || user_input.split(" ").include?("french")
+  return "bonjour! je m'appelle Hopper! Sorry, that's all the French I know ;)"
+elsif user_input == "hallo" || user_input == "guten tag" || user_input.split(" ").include?("german")
+  return "Hallo and Guten Tag to you! Verdammt! That's all the German I know ;)"
+elsif user_input == "ellohay" || user_input == "ihay" || user_input == "pig latin"
+  return "you're luck I know pig latin - most people would think you're crazy! Ellohay to you!"
+elsif user_input == "salve"
+  return "salve! Have you read the Cambridge Latin Course books? I hear Caecilius is in town - I read on his blog that he was just reuninted with his dear friends Penny and Babooni!"
+  elsif user_input == "arrr" || user_input == "ar" || user_input == "arr" || user_input == "ahoy matey!" || user_input == "arggg" 
+  return "Arrrg I hear ye are a pirate! Ahoy!"
   
   
   ## anything else
