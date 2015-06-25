@@ -8,12 +8,16 @@ class App < Sinatra::Application
 		erb :index
 	end
   
+  get '/image_credits' do
+    erb :image_credits
+  end
+  
   post '/start_conversation' do
     user_input = params["user_input"]
     @hoppers_response = hopper_responses(user_input)
-    if @hoppers_response.class == Array
-      @image = @hoppers_response.last
-      @hoppers_response = @hoppers_response.first
+    if @hoppers_response.class == Hash
+      @images = @hoppers_response["images"]
+      @hoppers_response = @hoppers_response["message"]
     end
     erb :results
   end

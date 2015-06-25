@@ -20,7 +20,11 @@
     <br>
     <div style="font-size:30px";><%= @hoppers_response %></div>
     
-    <img src="<%= @image %>">
+    <% if @images%>
+    <% @images.each do |image| %>
+    <img src="<%= image %>">
+    <% end %>
+    <%end%>
     
   </div>
   

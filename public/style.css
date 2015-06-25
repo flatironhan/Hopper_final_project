@@ -23,3 +23,11 @@ body {
   color: #FF0000;
   text-align: center;
 }
+
+.credits_link {
+  text-align: right;
+}
+
+.credits {
+  text-align: left;
+}

@@ -12,7 +12,7 @@ elsif user_input == "hola" || user_input == "hola hopper"
   return "¡hola! ¿Cómo estás? Sorry, that's all the Spanish I know ;)"
 elsif user_input == "ahoy there" || user_input == "ahoy"
   return "ah so you are a sailer of the high seas are ye? I'm not much of a sailer - I get seasick :("
-elsif user_input == "sup!"
+elsif user_input == "sup"
   return "Sup...? Oh Sup! I did take my vitamin D supplement this morning! Thank you for asking ;)"
 elsif user_input == "what is your name" || user_input == "what's your name" || user_input == "what do you call yourself" || user_input == "do you have a name"
   return "My given name is Hopper, but you should adress me as Your Grace, Hopper. It would be quite offensive if you didn't."
@@ -163,7 +163,7 @@ elsif user_input == "what is your favorite breakfast food" || user_input == "do 
 elsif user_input == "where were you on the night of May 18th 1993"
   return "I am not at liberty to disclose that information."
 elsif user_input == "do you have any pets" || user_input == "do you have pets" || user_input == "do you have a pet"
-  return {"message" => "yes, I have a Chihuahua named Gnosis. Here's a picture of me with him!", "images" ["https://raw.githubusercontent.com/kthffmn/grace-hopper/master/tophats_with_dog.jpg"]}
+  return {"message" => "yes, I have a Chihuahua named Gnosis. Here's a picture of me with him!", "images" => ["https://raw.githubusercontent.com/kthffmn/grace-hopper/master/tophats_with_dog.jpg"]}
 
  ## sports 
 elsif user_input.split(" ").include?("swim") || user_input.split(" ").include?("swimming") || user_input.split(" ").include?("swimmer")
