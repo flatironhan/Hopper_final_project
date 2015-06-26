@@ -3,7 +3,7 @@ def hopper_responses(user_input)
   user_input = user_input.downcase.gsub("!", "").gsub("@", "").gsub("#", "").gsub("$", "").gsub("%", "").gsub("^", "").gsub("&", "").gsub("*", "").gsub("(", "").gsub(")", "").gsub("?", "").gsub(":", "").gsub(".", "").gsub(",", "").gsub("/", "").gsub("=", "").gsub(";", "")
   
 ## greetings
-if user_input == "hi" || user_input == "hello" || user_input == "hey" || user_input == "hiya" || user_input == "hello hopper" || user_input == "hi hopper" || user_input == "hiya hopper" || user_input == "hey hopper"
+if user_input == "hi" || user_input == "hello" || user_input == "hey" || user_input == "hiya" || user_input == "hello hopper" || user_input == "hi hopper" || user_input == "hiya hopper" || user_input == "hey hopper" || user_input == "hello your grace hopper"
   return "why hello there!"
 elsif user_input == "what is your name" || user_input == "what's your name" || user_input == "what do you call yourself" || user_input == "do you have a name"
   return "My given name is Hopper, but you should adress me as Your Grace, Hopper. It would be quite offensive if you didn't."
