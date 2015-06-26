@@ -15,6 +15,8 @@ elsif user_input == "what are you doing" || user_input == "what are you doing he
   return "umm what are you doing?"
 elsif user_input == "nice to meet you"
   return "greet you greet you nice to meet you"
+elsif user_input == "when is your birthday" || user_input == "what is your birthday"
+  return "June 15, the year is too long ago for your pretty human number system to recognize"
   
   ## goodbyes
 elsif user_input == "bye" || user_input == "goodbye" || user_input == "good bye" || user_input == "byeee" || user_input == "bye hopper" || user_input == "goodbye hopper"
