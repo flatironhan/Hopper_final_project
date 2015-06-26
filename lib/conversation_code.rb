@@ -1,8 +1,7 @@
 def hopper_responses(user_input)
   
   user_input = user_input.downcase.gsub("!", "").gsub("@", "").gsub("#", "").gsub("$", "").gsub("%", "").gsub("^", "").gsub("&", "").gsub("*", "").gsub("(", "").gsub(")", "").gsub("?", "").gsub(":", "").gsub(".", "").gsub(",", "").gsub("/", "").gsub("=", "").gsub(";", "")
-
-
+  
 ## greetings
 if user_input == "hi" || user_input == "hello" || user_input == "hey" || user_input == "hiya" || user_input == "hello hopper" || user_input == "hi hopper" || user_input == "hiya hopper" || user_input == "hey hopper"
   return "why hello there!"
@@ -113,7 +112,7 @@ elsif user_input == "who is your favorite actor" || user_input == "do you have a
   return "Neil Patrick Harris is my favorite actor"
 elsif user_input == "what is your favorite movie" || user_input == "do you have a favorite movie" || user_input == "can you recommend a movie" || user_input == "what's your favorite movie"
   return "I don't waste my time with such frivolities as movies! I watch the movie of life!"
-elsif user_input == "what is your favorite TV show" || user_input == "what's your favoite TV show" || user_input == "do you have a favorite TV show?"
+elsif user_input == "what is your favorite tv show" || user_input == "what's your favoite tv show" || user_input == "do you have a favorite tv show?"
   return "TV? You think I have a TV out here in the wilderness? HA!"
 elsif user_input == "who is your favorite singer" || user_input == "do you have a favorite singer"
   return "I do enjoy listening to Weird Al Yankovic. His rendition of 'Party in the CIA' is sublime."
@@ -302,10 +301,21 @@ elsif user_input == "are you a cockroach"
 elsif user_input == "are you a cricket"
   return "NOOOOO!!! I AM A GRASSHOPPER! HOW DARE YOU!!!!!!!! AHHHHH GET AWAY!!!"
   
+  ## himym
+elsif user_input.split(" ").include?("himym") || user_input.split(" ").include?("how") && user_input.split(" ").include?("i") && user_input.split(" ").include?("met") && user_input.split(" ").include?("your") && user_input.split(" ").include?("mother")
+  return "I know I said I don't have a TV, but I do enjoy watching himym when I have the chance. I aprove of you mentioning it."
+  
+  ## dr. horrible
+elsif user_input.split(" ").include?("dr") && user_input.split(" ").include?("horrible") || user_input.split(" ").include?("dr.") && user_input.split(" ").include?("horrible") 
+  return "so glad you mentioned Dr. Horrible! You are an amazing being. You should get excited for Dr. Horrible 2!!!!"
+  
   ## squishables
 elsif user_input.split(" ").include?("squishable") || user_input.split(" ").include?("squishables")
   return "wow you know about squishables? You must be a mighty fine fellow! Squishable is an amazing company - hooray hooray hooray! Check them out! Charles' emails never fail to amuse me! The email where he mentioned mozzarella and a very short list of rhyming nouns was very important to my soul."
   
+  ## last minute
+elsif user_input == "you're gross" || user_input == "you are gross" || user_input == "eww" || user_input == "eww you're gross" || user_input == "you are ugly" || user_input == "you look ugly" || user_input == "you're ugly"
+  return "uh YOU'RE GROSS! Marshall is gross, Robin is grosser, Ranjit is a grocer."
   
    ## NEED TO BE LAST STUFF!!!!
   elsif user_input.split(" ").include?("do") && user_input.split(" ").include?("you") && user_input.split(" ").include?("like")
