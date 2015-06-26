@@ -1,17 +1,22 @@
 <div class="content">
+  <br>
+  <br>
   
-  
-  <div style="font-size:60px";> Talk to Hopper!</div>
-  <div style="font-size:50px";>Hi, I'm Hopper! Ask me anything!</div>
-  <div style="font-size:20px";> (see below for a few suggestions)</div>
-  
+  <div class="jumbotron" id="jumbotron_top">
+  <div style="font-size:60px"> Talk to Hopper!</div>
+  <div style="font-size:50px">Hi, I'm Hopper! Ask me anything!</div>
+  <div style="font-size:20px" id="see_below_quote"> (see below for a few fun suggestions)</div>
+  </div>
+    
+  <div class="jumbotron" id="jumbotron_bottom">
   <img src="https://raw.githubusercontent.com/kthffmn/grace-hopper/master/normal_hopper.png" width="500px">
 
   <form action="/start_conversation" method="POST">
     <label>Talk to me here:</label>
-    <input type="text" name="user_input">
-    <button value=submit>Talk!</button>
+    <input type="text" name="user_input" id="black-text">
+    <button value="submit" id="black-text">Talk!</button>
   </form>
+    </div>
     
   </div>
     
@@ -29,15 +34,20 @@
   
   <div class="content">
     
-  <div style="font-size:25px";> If you've tried all this, you may just be asking about topics Hopper knows nothing about or feels uncomfortable talking about. Try asking him some basic questions to get to know him. </div> 
-    <div style="font-size:25px";> Here are a few suggestions:</p>
+  <div style="font-size:25px"> If you've tried all this, you may just be asking about topics Hopper knows nothing about or feels uncomfortable talking about. Try asking him some basic questions to get to know him. </div> 
+    <br>
+    <p style="font-size:35px"> Here are a few suggestions:</p>
 
-    <p> <%= @random_question = random_question %> </p>
-    <p> <%= @random_question2 = random_question2 %> </p>
-    <p> <%= @random_question3 = random_question3 %> </p>
+    <p style="font-size:22px"> <%= @random_question = random_question %> </p>
+    <p style="font-size:22px"> <%= @random_question2 = random_question2 %> </p>
+    <p style="font-size:22px"> <%= @random_question3 = random_question3 %> </p>
     
 </div>
 
 <div class="credits_link">
   <a href="/image_credits" class="credits" style="font-size:15px">image credits</a>
+</div>
+
+<div class="credits_link">
+  <a href="/all_questions" class="credits" style="font-size:15px">list of all questions</a>
 </div>

@@ -7,6 +7,10 @@ body {
   font-size: 2em;
 }
 
+#black-text {
+  color:black;
+}
+
 .content {
   text-align: center;
 }
@@ -30,4 +34,21 @@ body {
 
 .credits {
   text-align: left;
+}
+
+.jumbotron {
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background-color: #483D8B;
+}
+
+#jumbotron_top {
+  height: 250px;
+  margin-top: -50px;
+  padding: 20px;
+}
+
+#jumbotron_bottom {
+  height: 460px;
+  padding: 10px;
 }

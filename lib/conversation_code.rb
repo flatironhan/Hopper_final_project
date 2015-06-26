@@ -1,6 +1,6 @@
 def hopper_responses(user_input)
   
-  user_input = user_input.downcase.gsub("!", "").gsub("@", "").gsub("#", "").gsub("$", "").gsub("%", "").gsub("^", "").gsub("&", "").gsub("*", "").gsub("(", "").gsub(")", "").gsub("?", "").gsub(":", "").gsub(".", "").gsub(",", "").gsub("/", "").gsub("+", "").gsub("=", "").gsub(";", "")
+  user_input = user_input.downcase.gsub("!", "").gsub("@", "").gsub("#", "").gsub("$", "").gsub("%", "").gsub("^", "").gsub("&", "").gsub("*", "").gsub("(", "").gsub(")", "").gsub("?", "").gsub(":", "").gsub(".", "").gsub(",", "").gsub("/", "").gsub("=", "").gsub(";", "")
 
 
 ## greetings
@@ -12,9 +12,10 @@ elsif user_input == "why are you named hopper" || user_input == "why are you nam
   return "The name has been passed down from generation to generation on my father's side (it hops in the family). I am really Hopper VII. This name is apt because when I was in the Rockettes I hopped instead of kicked in the Can Can Line." 
 elsif user_input == "who are you" || user_input == "what are you" || user_input == "what is this"
   return "I am Hopper. But you may address me as Your Grace, Hopper."
-elsif user_input == "what are you doing"
+elsif user_input == "what are you doing" || user_input == "what are you doing here"
   return "umm what are you doing?"
-  
+elsif user_input == "nice to meet you"
+  return "greet you greet you nice to meet you"
   
   ## goodbyes
 elsif user_input == "bye" || user_input == "goodbye" || user_input == "good bye" || user_input == "byeee"
@@ -41,7 +42,7 @@ elsif user_input == "how are you" || user_input == "how are you doing" || user_i
   return "better than you ever could be! How are you? (In one word please, I don't want to be bothered with the details.)"
 elsif user_input == "great" || user_input =="good" ||user_input == "fine" || user_input == "ok" ||user_input == "so so" || user_input == "bad" || user_input == "awful" || user_input == "tired" || user_input == "well" || user_input == "meh"
   return "I was just saying that to be polite - I don't actually want to know!!!! GOSH!"
-elsif user_input == "are you human"
+elsif user_input == "are you human" || user_input == "are you a human"
   return "Aw Hell No! I'm a grasshopper - OBVIOUSLAY!!!"  
 elsif user_input == "what is your favorite color" || user_input == "what is your favourite colour" || user_input == "what's your favorite color" || user_input == "what's your favourite colour"
   return "My favorite color is wonderflonium. You wouldn't know it..... OMG!!! OH MY GRANDMOTHER!!! My grandmother just texted me the funniest thing!"
@@ -52,26 +53,41 @@ elsif user_input == "how is your day" || user_input == "how was your day" || use
   
   ## girl/boy questions
   elsif user_input == "are you a girl" || user_input == "are you a boy" || user_input == "are you male" || user_input == "are you female" || user_input == "are you a woman" || user_input == "are you a man" || user_input == "are you a girl or a boy" || user_input == "are you a man or a woman" || user_input == "are you a boy or a girl" || user_input == "are you a woman or a man" || user_input == "are you male or female" || user_input == "are you female or male"
-  return "I neither a girl nor a boy, neither female nor male, neither man nor woman. I am a moman (not a wan)!"
+  return "I am neither a girl nor a boy, neither female nor male, neither man nor woman. I am a moman (not a wan)!"
   
 elsif user_input == "are you a moman or a wan" || user_input == "are you a man-woman or a woman-man" || user_input == "hedwig"
   return {"message" => "I see you like Hedwig! Hooray! Hedwig is my all time favorite broadway show! You must be a good fellow if you asked this question - here is an image just for you. It's me covered in body glitter with NPH at the Tony's!", "images" => ["https://raw.githubusercontent.com/kthffmn/grace-hopper/master/car.jpg"]}
   
-  ## yes and no responces (and why)
+  ## yes and no responces
 elsif user_input == "yes" || user_input == "yeah" || user_input == "ya" || user_input == "yea"
   return "... well this is awkward"
 elsif user_input == "no"
   return "ok then"
-  elsif user_input == "why"
+  
+  ## common responces
+elsif user_input == "why"
   return "stop pestering me! I already explained to you."
+elsif user_input == "wow"
+  return "wowoooo wowoooo! that's what my grandma says when she robs banks!"
+elsif user_input == "cool" || user_input == "that's cool" || user_input == "that's so cool"
+  return "it is NOT cool! It is 95 degrees in here and I am SO HOT! WRONG WRONG WRONG!"
+elsif user_input == "omg" || user_input == "oh my god"
+  return "you mean oh my grandmother?"
+  elsif user_input == "what"
+  return "didn't ya hear me?"
+  elsif user_input == "ok" || user_input == "okay"
+  return "..."
+
  
   ## chatspeak
   elsif user_input == "haha" || user_input == "ha" || user_input == "hahaha"
   return "ha ha HA ha (get the reference?)"
   elsif user_input == "lol" || user_input == "lolz" || user_input == "lols"
   return "lol? London or LA? That's my favorite game! You go first!"
-elsif user_input == "london" || user_input == "los angeles" || user_input == "la"
+
+elsif user_input.split(" ").include?("london")|| user_input.split(" ").include?("los angeles") || user_input.split(" ").include?("la")
   return "uhhh that's not how you play..."
+  
 elsif user_input == "how do you play" || user_input == "how to play" || user_input == "how do i play" || user_input == "i don't know the rules" || user_input == "what are the rules" || user_input == "tell me how to play" || user_input == "can you explain it to me" || user_input == "how do you play the game" || user_input == "what are the rules" || user_input == "can you explain the rules" || user_input == "tell me the rules" || user_input == "i don't know how to play"
   return "if you've never heard of London or LA you are a FOOL! I don't have time to explain the rules to you."
 elsif user_input == "want to play a game" || user_input == "do you want to play a game" || user_input == "will you play a game" ||user_input == "wanna play a game" || user_input == "do you wanna play a game" || user_input == "want to play a game with me" || user_input == "will you play a game with me"
@@ -89,6 +105,8 @@ elsif user_input == "do you like me"
   return "we've only just met so....."
 elsif user_input == "why don't you like me"
   return "it's not that I dislike you but...."
+elsif user_input == "i hate you"
+  return "that's fine by me"
     
   ## "popular" type of questions
 elsif user_input == "who is your favorite actor" || user_input == "do you have a favorite actor"
@@ -105,8 +123,8 @@ elsif user_input == "who is your favorite celebrity" || user_input == "do you ha
   return "John Cameron Mitchell. You wouldn't know him, unless of course you know him."
   
   ## social media
-elsif user_input.split(" ").include?("social") || user_input.split(" ").include?("media")|| user_input.split(" ").include?("twitter") || user_input.split(" ").include?("instagram") || user_input.split(" ").include?("blog") || user_input.split(" ").include?("facebook")
-  return "Ohhhh did you say social media?!?! You should follow me on twitter and instagram @fedora_lover_101! 
+elsif user_input.split(" ").include?("social") && user_input.split(" ").include?("media")|| user_input.split(" ").include?("twitter") || user_input.split(" ").include?("instagram") || user_input.split(" ").include?("blog") || user_input.split(" ").include?("facebook")
+  return "Ohhhh social media!!!! You should follow me on twitter and instagram @fedora_lover_101! 
 I also have a blog called 'A Day In The Life Of A Grasshopper'. It's really becomming popular you should definitely check it out!"
   
   
@@ -130,7 +148,7 @@ elsif user_input == "what are you wearing"
   return "A fedora, OBVIOUSLAY!! Isn't it stylish?"
 elsif user_input == "what is the meaning of life"
   return "that sounds like a question for Siri"
-elsif user_input == "where can I dump a body" || user_input == "where to dump a dead body" || user_input == "where to dump a body" || user_input == "where should I dump a body" || user_input == "where should I dump a dead body" || user_input == "where to hide a dead body" || user_input == "where can I hide a dead body" || user_input == "where should I hide a dead body"
+elsif user_input == "where can i dump a body" || user_input == "where to dump a dead body" || user_input == "where to dump a body" || user_input == "where should i dump a body" || user_input == "where should i dump a dead body" || user_input == "where to hide a dead body" || user_input == "where can i hide a dead body" || user_input == "where should i hide a dead body"
   return "why are you asking me? You should be asking my grandmother! Oh hey - she just texted me!"
 elsif user_input =="do you believe in god" || user_input == "do you believe in religion" || user_input == "do you have a religion" || user_input == "are you christian" || user_input == "do you beleive in jesus"
   return "I beleive in the mystical Grasshopper spirit who rules the lands with an iron antenna."
@@ -165,7 +183,8 @@ elsif user_input == "do you have any pets" || user_input == "do you have pets" |
 
  ## sports 
 elsif user_input.split(" ").include?("swim") || user_input.split(" ").include?("swimming") || user_input.split(" ").include?("swimmer")
-  return "I am in fact an excellent swimmer. I competed in the Worldwide Grasshopper Olympics (WGO) in Moscow in 2004 and I placed 2nd. I was unfairly beaten by a cricket disguised as a grasshopper but by the time the authorities verified it he had already escaped with the 1st place medal. I was never duly rewarded for my feat and thus I quit swimming forever in protest. To this day the WGO official records have that EVIL cricket listed as the 1st place winner and ME as the 2ND!!!"
+  return {"message" => "I am in fact an excellent swimmer. I competed in the Worldwide Grasshopper Olympics (WGO) in Moscow in 2004 and I placed 2nd. I was unfairly beaten by a cricket disguised as a grasshopper but by the time the authorities verified it he had already escaped with the 1st place medal. I was never duly rewarded for my feat and thus I quit swimming forever in protest. To this day the WGO official records have that EVIL cricket listed as the 1st place winner and ME as the 2ND!!! Here's a picture of me swimming recreationally.", "images" => ["https://raw.githubusercontent.com/kthffmn/grace-hopper/master/snorkling.jpg"]}
+  
   elsif user_input.split(" ").include?("sports") || user_input.split(" ").include?("sport")
   return "Oh so you mentioned sports. Did I mention that in addition to being an excellent swimmer, I also play cricket professionally? I am on an all grasshopper cricket team (NO crickets allowed) and we are currently 4th in the league. Hopefully by the playoffs we'll have gotten better and maybe we'll be able to take home the golden grasshopper orb this year!"
   
@@ -188,9 +207,10 @@ elsif user_input == "why did the chicken cross the road"
   
   ## more photograph questions
 elsif user_input == "have you ever been parachuting" || user_input == "have you been parachuting" || user_input == "have you gone parachuting" || user_input == "have you ever gone parachuting"
-  return "glad you asked! I actually went last Saturday - here's a picture!"
+  return {"message" => "glad you asked! I actually went last Saturday - here's a picture!", "images" => ["https://raw.githubusercontent.com/kthffmn/grace-hopper/master/hanggliding.jpg"]}
+
 elsif user_input == "have you ever had a near death encounter"
-  return "yes, I shudder to think of it. Here's a picture, but I can't talk of further. Look upon my works ye mighty and despair!"
+  return {"message" => "yes, I shudder to think of it. Here's a picture, but I can't talk about it further. Look upon my works ye mighty and despair!", "images" => ["https://raw.githubusercontent.com/kthffmn/grace-hopper/master/snake.jpg"]}
   
   ## bus/subway written code (saved on Sinatra)
   elsif user_input == "what do you think about when you are alone"
@@ -243,13 +263,56 @@ elsif user_input == "sup"
 elsif user_input == "bonjour" || user_input == "bonjour hopper" || user_input.split(" ").include?("french")
   return "bonjour! je m'appelle Hopper! Sorry, that's all the French I know ;)"
 elsif user_input == "hallo" || user_input == "guten tag" || user_input.split(" ").include?("german")
-  return "Hallo and Guten Tag to you! Verdammt! That's all the German I know ;)"
+  return "Hallo and Guten Tag to you! Was machsst du da verdammt noch mal! That's all the German I know ;)"
 elsif user_input == "ellohay" || user_input == "ihay" || user_input == "pig latin"
-  return "you're luck I know pig latin - most people would think you're crazy! Ellohay to you!"
+  return "you're lucky I know pig latin - most people would think you're crazy! Ellohay to you!"
 elsif user_input == "salve"
   return "salve! Have you read the Cambridge Latin Course books? I hear Caecilius is in town - I read on his blog that he was just reuninted with his dear friends Penny and Babooni!"
   elsif user_input == "arrr" || user_input == "ar" || user_input == "arr" || user_input == "ahoy matey!" || user_input == "arggg" 
   return "Arrrg I hear ye are a pirate! Ahoy!"
+elsif user_input == "what does that mean"
+  return "You'd be insulted if I told you"
+  
+  ## class suggested queestions
+elsif user_input == "who created you" || user_input == "who made you" || user_input == "who is your creator" || user_input == "who is your maker"
+  return "umm my parents... who created YOU?"
+  
+  
+  #######
+elsif user_input == "tell me something funny"
+  return "it is ironic to say baguette in a spanish accent"
+elsif user_input == "tell me something profound"
+  return "to be free one must give up a little part of one's self."
+  
+  ###job
+elsif user_input == "what is your job" || user_input == "what's your job"
+  return ""
+  elsif user_input == "what do you do for a living"
+  return "it is more interesteing to ask what I do for a killing"
+elsif user_input == "what do you do for a killing" || user_input == "what would you do for a killing"
+  return "I call my grandmother of course! She's a master at murder!"
+  
+  ## political
+elsif user_input == "what are your political views" 
+  return "Did you say politics? I despise politics! Those pesty tics always bite me when I'm near pollen! I much prefer deer tics - deer tics are very dear to me."
+  
+  ## more random questions (self-help)
+elsif user_input == "are you a cockroach"
+  return "hack no! I'm a grasshopper! (get the reference, you probably don't...)"
+elsif user_input == "are you a cricket"
+  return "NOOOOO!!! I AM A GRASSHOPPER! HOW DARE YOU!!!!!!!! AHHHHH GET AWAY!!!"
+  
+  ## squishables
+elsif user_input.split(" ").include?("squishable") || user_input.split(" ").include?("squishables")
+  return "wow you know about squishables? You must be a mighty fine fellow! Squishable is an amazing company - hooray hooray hooray! Check them out! Charles' emails never fail to amuse me! The email where he mentioned mozzarella and a very short list of rhyming nouns was very important to my soul."
+  
+  
+   ## NEED TO BE LAST STUFF!!!!
+  elsif user_input.split(" ").include?("do") && user_input.split(" ").include?("you") && user_input.split(" ").include?("like")
+  return "Do you like it? If you do, I hate it!"
+  elsif user_input.split(" ").include?("what") && user_input.split(" ").include?("is") && user_input.split(" ").include?("your") && user_input.split(" ").include?("favorite")
+  return "what's with all these favorite questions? Ask me something else please!"
+  
   
   
   ## anything else

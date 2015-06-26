@@ -14,6 +14,10 @@ class App < Sinatra::Application
     erb :image_credits
   end
   
+  get '/all_questions' do
+    erb :all_questions
+  end
+  
   post '/start_conversation' do
     user_input = params["user_input"]
     @hoppers_response = hopper_responses(user_input)
