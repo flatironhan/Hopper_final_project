@@ -17,8 +17,12 @@ elsif user_input == "nice to meet you"
   return "greet you greet you nice to meet you"
   
   ## goodbyes
-elsif user_input == "bye" || user_input == "goodbye" || user_input == "good bye" || user_input == "byeee"
+elsif user_input == "bye" || user_input == "goodbye" || user_input == "good bye" || user_input == "byeee" || user_input == "bye hopper" || user_input == "goodbye hopper"
   return "Farewell and may your path be lit with dreams and new tomorrows."
+elsif user_input == "farewell" || user_input == "farewell hopper"
+  return "farewell to thee as well!" 
+elsif user_input == "ciao" || user_input == "ciao hopper"
+  return "ciao bella!"
   
   ## more favorite questions
 elsif user_input == "what is your favorite food" || user_input == "do you have a favorite food" || user_input == "what's your favorite food" || user_input == "what foods do you like" || user_input == "what food do you like"
@@ -29,6 +33,9 @@ elsif user_input == "what is your favorite book" || user_input == "what's your f
   ## grasshopper quetions
 elsif user_input == "how high can you hop" || user_input == "how high do you hop"
   return "119.7 yards"
+elsif user_input == "why are you green"
+  return "well I'm a grasshopper so..."
+  
   
   ### common questions
 elsif user_input == "how old are you" 
@@ -182,7 +189,7 @@ elsif user_input == "do you have any pets" || user_input == "do you have pets" |
 
  ## sports 
 elsif user_input.split(" ").include?("swim") || user_input.split(" ").include?("swimming") || user_input.split(" ").include?("swimmer")
-  return {"message" => "I am in fact an excellent swimmer. I competed in the Worldwide Grasshopper Olympics (WGO) in Moscow in 2004 and I placed 2nd. I was unfairly beaten by a cricket disguised as a grasshopper but by the time the authorities verified it he had already escaped with the 1st place medal. I was never duly rewarded for my feat and thus I quit swimming forever in protest. To this day the WGO official records have that EVIL cricket listed as the 1st place winner and ME as the 2ND!!! Here's a picture of me swimming recreationally.", "images" => ["https://raw.githubusercontent.com/kthffmn/grace-hopper/master/snorkling.jpg"]}
+  return {"message" => "I am in fact an excellent swimmer. I competed in the Worldwide Grasshopper Olympics (WGO) in Moscow in 2004 and I placed 2nd. I was unfairly beaten by a cricket disguised as a grasshopper but by the time the authorities verified it he had already escaped with the 1st place medal. I was never duly rewarded for my feat and thus I quit professional swimming forever in protest. To this day the WGO official records have that EVIL cricket listed as the 1st place winner and ME as the 2ND!!! Here's a picture of me swimming recreationally.", "images" => ["https://raw.githubusercontent.com/kthffmn/grace-hopper/master/snorkling.jpg"]}
   
   elsif user_input.split(" ").include?("sports") || user_input.split(" ").include?("sport")
   return "Oh so you mentioned sports. Did I mention that in addition to being an excellent swimmer, I also play cricket professionally? I am on an all grasshopper cricket team (NO crickets allowed) and we are currently 4th in the league. Hopefully by the playoffs we'll have gotten better and maybe we'll be able to take home the golden grasshopper orb this year!"
@@ -227,7 +234,7 @@ return "I have, but there was really no point. The view up there isn't much bett
 elsif user_input == "do you prefer hamburgers or hotdogs"
 return "Who do you think I am? I only dine on the finest dishes prepared by the world's most skilled chefs. I never eat hamburgers or hotdogs!"
 
-elsif user_input == "do you knit"
+elsif user_input == "do you knit" || user_input == "do you like to knit"
 return "yes I do knit. Currently I am working on a sweater for Gnosis."
 
 elsif user_input.split(" ").include?("gnosis")
