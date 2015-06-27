@@ -1,5 +1,5 @@
 def hopper_responses(user_input)
-  
+  languages
   user_input = user_input.downcase.gsub("!", "").gsub("@", "").gsub("#", "").gsub("$", "").gsub("%", "").gsub("^", "").gsub("&", "").gsub("*", "").gsub("(", "").gsub(")", "").gsub("?", "").gsub(":", "").gsub(".", "").gsub(",", "").gsub("/", "").gsub("=", "").gsub(";", "")
   
 ## greetings
@@ -262,7 +262,7 @@ elsif user_input == "what is pie" || user_input == "what's pie" || user_input ==
 return "Pie a popular dessert... why are you asking me this? Don't you know english? If you're looking for a good pie recipe try grasshopper pie - don't worry, there aren't real grasshoppers in it. I'm not a cannibal!!"
 
   ## languages
-elsif user_input == "do you speak any other languages?" || user_input == "do you know any other languages"
+elsif user_input == "do you speak any other languages" || user_input == "do you know any other languages"
   return "I know a bit of spanish, french, german, pig latin, latin, pirate, ship-speak and cowboy but that's all."
   elsif user_input == "howdy"
   return "howdy there partner!"
