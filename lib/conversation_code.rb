@@ -1,5 +1,5 @@
 def hopper_responses(user_input)
-  
+ 
   user_input = user_input.downcase.gsub("!", "").gsub("@", "").gsub("#", "").gsub("$", "").gsub("%", "").gsub("^", "").gsub("&", "").gsub("*", "").gsub("(", "").gsub(")", "").gsub("?", "").gsub(":", "").gsub(".", "").gsub(",", "").gsub("/", "").gsub("=", "").gsub(";", "")
   
 ## greetings
@@ -188,7 +188,7 @@ elsif user_input.split(" ").include?("chiwawa") || user_input.split(" ").include
   ## random
 elsif user_input == "what is your favorite breakfast food" || user_input == "do you have a favorite breakfast food" || user_input == "what's your favorite breakfast food" || user_input == "what is your favorite breakfast" || user_input == "do you have a favorite breakfast" || user_input == "what's your favorite breakfast"
   return "Most mornings I have smoked salmon with pureed edamame. However, my favorite breakfast would have to be a fresh funyun omelette with a tall glass of tantrum."
-elsif user_input == "where were you on the night of May 18th 1993"
+elsif user_input == "where were you on the night of may 18th 1993"
   return "I am not at liberty to disclose that information."
 elsif user_input == "do you have any pets" || user_input == "do you have pets" || user_input == "do you have a pet" || user_input == "do you have a dog" || user_input == "do you have any dogs"
   return {"message" => "yes, I have a Chihuahua named Gnosis. Here's a picture of me with him!", "images" => ["https://raw.githubusercontent.com/kthffmn/grace-hopper/master/tophats_with_dog.jpg"]}
@@ -298,7 +298,7 @@ elsif user_input == "tell me something profound"
   
   ###job
 elsif user_input == "what is your job" || user_input == "what's your job"
-  return ""
+  return "I do interpretive dance as well as painting still lifes of socks and citrus furits on the side. Inspired by David Burtka, after a long hiatus I have decided to begin auditioning for Broadway again. Soon the name 'Hopper' will be up in lights!"
   elsif user_input == "what do you do for a living"
   return "it is more interesteing to ask what I do for a killing"
 elsif user_input == "what do you do for a killing" || user_input == "what would you do for a killing"
