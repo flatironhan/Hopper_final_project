@@ -1,5 +1,5 @@
 def hopper_responses(user_input)
-  
+  vacation
   user_input = user_input.downcase.gsub("!", "").gsub("@", "").gsub("#", "").gsub("$", "").gsub("%", "").gsub("^", "").gsub("&", "").gsub("*", "").gsub("(", "").gsub(")", "").gsub("?", "").gsub(":", "").gsub(".", "").gsub(",", "").gsub("/", "").gsub("=", "").gsub(";", "")
   
 ## greetings
@@ -63,7 +63,7 @@ elsif user_input == "how is your day" || user_input == "how was your day" || use
   elsif user_input == "are you a girl" || user_input == "are you a boy" || user_input == "are you male" || user_input == "are you female" || user_input == "are you a woman" || user_input == "are you a man" || user_input == "are you a girl or a boy" || user_input == "are you a man or a woman" || user_input == "are you a boy or a girl" || user_input == "are you a woman or a man" || user_input == "are you male or female" || user_input == "are you female or male"
   return "I am neither a girl nor a boy, neither female nor male, neither man nor woman. I am a moman (not a wan)!"
   
-elsif user_input == "are you a moman or a wan" || user_input == "are you a man-woman or a woman-man" || user_input == "hedwig"
+elsif user_input == "are you a moman or a wan" || user_input == "are you a man-woman or a woman-man" || user_input.split(" ").include?("hedwig")
   return {"message" => "I see you like Hedwig! Hooray! Hedwig is my all time favorite broadway show! You must be a good fellow if you asked this question - here is an image just for you. It's me covered in body glitter with NPH at the Tony's!", "images" => ["https://raw.githubusercontent.com/kthffmn/grace-hopper/master/car.jpg"]}
   
   ## yes and no responces
@@ -147,6 +147,10 @@ elsif user_input == "will you marry me" || user_input == "do you want to marry m
   return "I barely even know you!?! I emphatically decline!!! Plus, you're MUCH too old for me!"
 elsif user_input == "will you go out with me" || user_input == "will you date me" || user_input == "will you go on a date with me" || user_input == "will you go out on a date with me" || user_input == "will you be my boyfriend" || user_input == "will you be my girlfriend" || user_input == "want to be my girlfriend" || user_input == "want to be my boyfriend" || user_input == "can I be your girlfriend" || user_input == "can I be your boyfriend"
   return "Date you??? How could you propose such a thing!?! You must address me with my correct title: 'Your Grace'"
+elsif user_input == "will you date me your grace" || user_input == "will you date me hopper your grace" || user_input == "will you date me your grace hopper" || user_input == "your grace will you date me" || user_input == "your grace hopper will you date me"
+  return "thank you for properly addressing me, but I still don't like you enough to go on a date"
+elsif user_input == "do you have a girlfriend" || user_input == "do you have a boyfriend" || user_input == "are you dating anyone" || user_input == "are you in a relationship"
+  return "not at the moment... care to set me up with any nice grasshoppers?"
 elsif user_input == "do you live with anyone" || user_input == "do you live alone"
   return {"message" => "I live by myself with my pet Chihuahua named Gnosis. Here's a picture of us together!", "images" => ["https://raw.githubusercontent.com/kthffmn/grace-hopper/master/tophats_with_dog.jpg"]}
   
@@ -169,7 +173,7 @@ elsif user_input.split(" ").include?("broadway")
 elsif user_input.split(" ").include?("grandmother") || user_input.split(" ").include?("grandma") || user_input.split(" ").include?("granny") || user_input == "what did she say" || user_input == "what did she text you" || user_input == "what did she text" || user_input == "what did she write"
   return "ok so, you need a little background about my grandma to understand this story. She just texted me 'hi Hopper' but you see, she doesn't actually speak english. She only speaks Grasshoppönian and Russian. In  Grasshoppönian 'hi' means 'I just robbed a bank! The hops are after me! Quick, help me escape!'. That wouldn't be surprising because she is a known fugitive, except that there aren't any banks in her area so she must be delusional. Maybe she forgot to take her vitamin D supplements."
   
-elsif user_input.split(" ").include?("vacation")
+elsif user_input.split(" ").include?("vacation") || user_input.split(" ").include?("vacations")
   return {"message" => "Thank's for bringing up vacations! I just went on an around the world tour - let me show you the pictures!", "images" => ["https://raw.githubusercontent.com/kthffmn/grace-hopper/master/vacation_hopper.jpg", "https://raw.githubusercontent.com/kthffmn/grace-hopper/master/paris.jpg", "https://raw.githubusercontent.com/kthffmn/grace-hopper/master/mountain.jpg"]}
   
 elsif user_input.split(" ").include?("weather")
@@ -240,7 +244,7 @@ elsif user_input == "do you knit" || user_input == "do you like to knit"
 return "yes I do knit. Currently I am working on a sweater for Gnosis."
 
 elsif user_input.split(" ").include?("gnosis")
-return "ah Gnosis. He's such a cute dog. I love my pet! Here's a picture of us together!"
+  return {"message" => "ah Gnosis. He's such a cute dog. I love my pet! Here's a picture of us together!", "images" => ["https://raw.githubusercontent.com/kthffmn/grace-hopper/master/tophats_with_dog.jpg"]}
 
 elsif user_input == "do you like the beach"
 return "oh yes I love the beach! I was just at the beach in my around the world vacation!"
