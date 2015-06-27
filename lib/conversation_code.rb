@@ -1,5 +1,5 @@
 def hopper_responses(user_input)
-  vacation
+  
   user_input = user_input.downcase.gsub("!", "").gsub("@", "").gsub("#", "").gsub("$", "").gsub("%", "").gsub("^", "").gsub("&", "").gsub("*", "").gsub("(", "").gsub(")", "").gsub("?", "").gsub(":", "").gsub(".", "").gsub(",", "").gsub("/", "").gsub("=", "").gsub(";", "")
   
 ## greetings
