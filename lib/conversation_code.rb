@@ -325,10 +325,16 @@ elsif user_input.split(" ").include?("dr") && user_input.split(" ").include?("ho
   ## squishables
 elsif user_input.split(" ").include?("squishable") || user_input.split(" ").include?("squishables")
   return "wow you know about squishables? You must be a mighty fine fellow! Squishable is an amazing company - hooray hooray hooray! Check them out! Charles' emails never fail to amuse me! The email where he mentioned mozzarella and a very short list of rhyming nouns was very important to my soul."
+elsif user_input.split(" ").include?("brain") && user_input.split(" ").include?("dial") || user_input.split(" ").include?("brain") || user_input.split(" ").include?("dialing")
+  return "My brain dial number is 777-238-9459. If you'd like to continue our conversation through brain dial just give me a call! (Not between 7-8pm though please, that's when I do my yoga)"
   
   ## last minute
 elsif user_input == "you're gross" || user_input == "you are gross" || user_input == "eww" || user_input == "eww you're gross" || user_input == "you are ugly" || user_input == "you look ugly" || user_input == "you're ugly"
   return "uh YOU'RE GROSS! Marshall is gross, Robin is grosser, Ranjit is a grocer."
+  
+  ## SDSS Easter Egg
+elsif user_input == "hj2b90xp"
+  return "This is a top secret message for members of the SDSS. In partnering with the CIA we have identified a group of foreign cats (their international allegiance is still unknown) attempting to infiltrate the user SDSS database. This would expose all SDSS spies, compromising their covers and eliminating decades of work. All spies please reinforce your covers and then go into hiding or report back to SDSS HQ. Be sure not to arouse any suspicion - you may be under surveillance as you read this. Good Luck."
   
    ## NEED TO BE LAST STUFF!!!!
   elsif user_input.split(" ").include?("do") && user_input.split(" ").include?("you") && user_input.split(" ").include?("like")
