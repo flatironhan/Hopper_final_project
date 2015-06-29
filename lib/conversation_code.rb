@@ -339,7 +339,7 @@ elsif user_input == "hj2b90xp"
    ## NEED TO BE LAST STUFF!!!!
   elsif user_input.split(" ").include?("do") && user_input.split(" ").include?("you") && user_input.split(" ").include?("like")
   return "Do you like it? If you do, I hate it!"
-  elsif user_input.split(" ").include?("what") && user_input.split(" ").include?("is") && user_input.split(" ").include?("your") && user_input.split(" ").include?("favorite")
+  elsif user_input.split(" ").include?("what") && user_input.split(" ").include?("is") && user_input.split(" ").include?("your") && user_input.split(" ").include?("favorite") || user_input.split(" ").include?("what's") && user_input.split(" ").include?("your") && user_input.split(" ").include?("favorite")
   return "what's with all these favorite questions? Ask me something else please!"
   
   
